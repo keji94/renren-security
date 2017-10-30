@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SmartFoxWorkToolsProjectState">
+    <option name="branch" value="renren-security-boot" />
+    <option name="gitUrl" value="https://github.com/keji94/renren-security.git" />
+    <option name="localBranch" value="renren-security-boot" />
+    <option name="revision" value="2d5bf11de14df21bde87ddeca2b1f81675bce797" />
+  </component>
+</project>

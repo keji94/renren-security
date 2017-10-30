@@ -28,7 +28,7 @@ public class SysMenuServiceImpl implements SysMenuService {
 		if(menuIdList == null){
 			return menuList;
 		}
-		
+
 		List<SysMenuEntity> userMenuList = new ArrayList<>();
 		for(SysMenuEntity menu : menuList){
 			if(menuIdList.contains(menu.getMenuId())){
@@ -54,12 +54,12 @@ public class SysMenuServiceImpl implements SysMenuService {
 		if(userId == Constant.SUPER_ADMIN){
 			return getAllMenuList(null);
 		}
-		
+
 		//用户菜单列表
 		List<Long> menuIdList = sysUserService.queryAllMenuId(userId);
 		return getAllMenuList(menuIdList);
 	}
-	
+
 	@Override
 	public SysMenuEntity queryObject(Long menuId) {
 		return sysMenuDao.queryObject(menuId);
